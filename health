@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Minecraft 3D</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" href="data:,">
+
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <div id="loading-screen">
+        <h1>Paper Minecraft 3D</h1>
+        <p>Click to Start</p>
+    </div>
+
+    <div id="crosshair">
+        +
+    </div>
+
+    <div id="hud">
+
+        <div id="hotbar">
+
+            <div class="slot selected">1</div>
+            <div class="slot">2</div>
+            <div class="slot">3</div>
+            <div class="slot">4</div>
+            <div class="slot">5</div>
+            <div class="slot">6</div>
+            <div class="slot">7</div>
+            <div class="slot">8</div>
+            <div class="slot">9</div>
+
+        </div>
+
+        <div id="stats">
+
+            <div id="health">
+                ❤️❤️❤️❤️❤️
+            </div>
+
+            <div id="debug">
+                X: 0 Y: 0 Z: 0
+            </div>
+
+        </div>
+
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <script type="module" src="./src/main.js"></script>
+
+</body>
+</html>
